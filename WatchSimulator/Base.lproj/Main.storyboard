@@ -68,7 +68,19 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EvY-UU-o4n">
                         <rect key="frame" x="0.0" y="0.0" width="142" height="178"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33d-Dr-UcD">
+                                <rect key="frame" x="102" y="141" width="36" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="33d-Dr-UcD" secondAttribute="trailing" constant="4" id="22W-Yh-KA9"/>
+                            <constraint firstItem="TBO-O8-a32" firstAttribute="top" secondItem="33d-Dr-UcD" secondAttribute="bottom" constant="-1" id="uD7-AY-feD"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="4"/>
@@ -76,10 +88,13 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="bpmLabel" destination="33d-Dr-UcD" id="MxS-0y-zWG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiz-5t-hns" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="322"/>
+            <point key="canvasLocation" x="947" y="321"/>
         </scene>
     </scenes>
     <resources>
